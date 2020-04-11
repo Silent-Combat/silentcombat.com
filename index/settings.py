@@ -25,7 +25,7 @@ SECRET_KEY = 'placekeyhere'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'silentcombat.wsgi.application'
+WSGI_APPLICATION = 'index.wsgi.application'
 
 
 # Database
