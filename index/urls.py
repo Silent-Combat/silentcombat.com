@@ -17,13 +17,13 @@ from django.contrib import admin
 from django.urls import path
 
 from index.views import *
-from news.views import news_view
+from news.views import posts
 
 urlpatterns = [
     path('', index_view, name='index'),
     path('about/', about_view, name='about'),
 #    path('gallery/', gallery_view, name='gallery'),
-    path('news/', news_view, name='news'),
+    path('news/', posts, name='news'),
 #    path('contact/', contact_view, name='contact'),
     path('rules/', rules_view, name='rules'),
 #    path('servers/', servers_view, name='servers'),
