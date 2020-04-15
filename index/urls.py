@@ -18,6 +18,7 @@ from django.urls import path
 
 from index.views import *
 from news.views import posts
+from server.views import servers
 
 urlpatterns = [
     path('', index_view, name='index'),
@@ -26,7 +27,7 @@ urlpatterns = [
     path('news/', posts, name='news'),
 #    path('contact/', contact_view, name='contact'),
     path('rules/', rules_view, name='rules'),
-    path('servers/', servers_view, name='servers'),
+    path('servers/', servers, name='servers'),
     path('donate/', donate_view, name='donate'),
     path('admin/', admin.site.urls),
 ]
