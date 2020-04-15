@@ -28,7 +28,7 @@ def post(request):
     if request.method == 'POST':
         body = json.loads(request.body.decode('utf-8'))
         if request.user.id is None:
-            userid = 'anonymous'
+            return redirect('news')
         else:
             userid = request.user.id
 
