@@ -26,7 +26,7 @@ urlpatterns = [
     path('news/', posts, name='news'),
 #    path('contact/', contact_view, name='contact'),
     path('rules/', rules_view, name='rules'),
-#    path('servers/', servers_view, name='servers'),
+    path('servers/', servers_view, name='servers'),
     path('donate/', donate_view, name='donate'),
     path('admin/', admin.site.urls),
 ]
