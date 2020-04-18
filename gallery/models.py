@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Gallery(models.Model):
+    name = models.TextField(max_length=50)
+    path = models.TextField()
+    
